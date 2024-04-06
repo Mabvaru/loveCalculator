@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Exo+2:ital,wght@0,100;1,300&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville&family=Open+Sans&family=Pixelify+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Mabvaru's Love Compatibility Test</h1>
+        <p class="para">On this website, we help you calculate the rate of success on finding love,<br />simply put your name and the name of your partner/crush, using a random computer generator,<br />we will tell you the good news or the ugly truth.</p>
+        <form id="loveForm">
+            <div class="input-container">
+                <label for="yourName">Your name:</label>
+                <input type="text" id="yourName" placeholder="Your name" required>
+        
+                <label for="theirName">Their name:</label>
+                <input type="text" id="theirName" placeholder="Their name" required>
+            </div>
+            <input type="submit" value="Calculate Compatibility">
+        </form>
+        
+    </div>
+
+    <div id="resultPopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="loveCalculator.js"></script>
+</body>
+
+</html>
